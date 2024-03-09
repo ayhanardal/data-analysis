@@ -54,6 +54,6 @@ def create_rfm(dataframe):
     return rfm[["customer_id", "recency","frequency","monetary","RF_SCORE","RFM_SCORE","segment"]]
 
 rfm_df = create_rfm(pd.read_csv('flo_data_20k.csv'))
-rfm_df.to_csv('flo_data_20k-rfm.csv', index=False)
+rfm_df.to_csv('flo_rfm.csv', index=False)
 
 

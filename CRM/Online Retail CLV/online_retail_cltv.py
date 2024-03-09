@@ -46,4 +46,4 @@ def create_clv_c(dataframe, profit = 0.1):
     return cltv_c
 
 online_retail_clv = create_clv_c(pd.read_excel('online_retail_II.xlsx'))
-online_retail_clv.to_csv('online_retail_cltv.csv')
+online_retail_clv.to_csv('online_retail_cltv.csv', index=False)
